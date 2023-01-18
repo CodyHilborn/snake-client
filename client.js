@@ -13,8 +13,8 @@ const connect = function() {
     conn.write('Name: CJH');
   });
 
-  conn.on('data', () => {
-    console.log('you ded cuz u idled');
+  conn.on('data', (data) => {
+    console.log(data);
   });
 
   conn.setEncoding('utf8');
